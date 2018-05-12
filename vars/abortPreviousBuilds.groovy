@@ -18,4 +18,6 @@ def abortPreviousBuilds() {
 
         previousBuild = previousBuild.getPreviousBuildInProgress()
     }
+
+    echo ">> No older builds found, continuing build #${currentBuild.number}"
 }
